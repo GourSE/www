@@ -1,0 +1,26 @@
+.main_box{
+    max-width: 100%;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 5em;
+}
+
+.main_img{
+    content: url(/img/the-rock-sus-eye.gif);
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    width: 11em;
+    height: 11em;
+    padding: 1rem 1rem;
+}
+
+.main_txt{
+    max-width: 50%;
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}

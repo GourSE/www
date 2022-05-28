@@ -1,0 +1,31 @@
+input.form{
+    color-scheme: mediumslateblue;
+    font-size: clamp(1em,3.5vw,2em);
+    align-items: center;
+    border-radius: 0.1em;
+    /* background-color: rgba(0, 69, 0, 0.293); */
+    margin: 1vw;
+}
+
+p.form{
+    display: inline;
+    font-weight: bolder;
+}
+
+#name{
+    display: inline;
+    width: 25vw;
+}
+
+#link{
+    width: 90vw;
+}
+
+#server_name{
+    display: inline;
+    font-size: clamp(1.1em,5vw,2em);
+}
+
+input.form:hover{
+    color: mediumslateblue;
+}

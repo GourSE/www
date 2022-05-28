@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pokémob 和咖波！">
+    <title>管理檔案</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="banner">
+        <a href="/">
+            <img class="icon" src="/img/capoo_logo.png" alt="Capoo as Logo" title="霓霓吃西瓜">
+        </a>
+    </section>
+
+    <p class="title">檔案上傳</p>
+
+    <div class="upload">
+        <form class="upload" action="/php/upload_file.php" method="post" enctype="multipart/form-data">
+            <input class="uploadi" name="uploadFile[]" multiple type="file"/><br>
+            <input class="uploadi" type="submit" value="Upload">
+        </form>
+    </div>
+
+    <p class="title">檔案刪除</p>
+
+
+    <div class="remove">
+        <form class="remove" action="/php/remove_file.php" method="post">
+            <input class="removei" name="removeFile" type="text" placeholder="File Name"/><br>
+            <input class="removei" type="submit" value="Remove">
+        </form>
+    </div>
+
+    <a class="important_link" href="/files">瀏覽檔案</a>
+    <a class="important_link" href="/admin">主頁</a>
+
+
+</body>
+
+</html>

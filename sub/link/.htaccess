@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .js .css
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

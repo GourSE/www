@@ -1,0 +1,7 @@
+
+<FilesMatch "^(remove_file\.php|upload_file\.php)$">
+AuthType Basic
+AuthName "Login"
+Require valid-user
+AuthUserFile /home/gourse/wwws/.htpasswd
+</FilesMatch>
