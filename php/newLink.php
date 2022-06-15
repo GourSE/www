@@ -21,8 +21,7 @@
     <a class="important_link" href="/link">返回</a>
 
 <?php
-// error_reporting(E_ALL); 
-// ini_set('display_errors','1'); 
+// link and name must come in without spaces
 
 $link = $_POST['link'];
 $name = $_POST['name'];
