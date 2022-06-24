@@ -17,6 +17,6 @@ RewriteRule ^php/?$ .- [R=404]
 RewriteRule ^sub/?$ .- [R=404]
 
 
-ErrorDocument 500 /error/500.html
-ErrorDocument 404 /error/404.html
-ErrorDocument 401 /error/401.html
+ErrorDocument 500 /error_html/500.html
+ErrorDocument 404 /error_html/404.html
+ErrorDocument 401 /error_html/401.html
