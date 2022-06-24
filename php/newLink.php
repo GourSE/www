@@ -18,7 +18,7 @@
             <img class="icon" src="/img/capoo_logo.png" alt="Capoo as Logo" title="霓霓吃西瓜">
         </a>
     </section>
-    <a class="important_link" href="/link">返回</a>
+    <a class="important_link" href="/link">actually go back</a>
 
 <?php
 // link and name must come in without spaces
@@ -30,10 +30,10 @@ $fileCat = file_get_contents($file_name, "a");
 
 if ($link == "" or $name == "") {
     unset($_POST);
-    die("<p class='form'> 空白表單？</p>");
+    die("<p class='form'> Empty query？</p>");
     // header("Location: http://pokemob.net");
 } elseif (str_contains($fileCat, "\n" . $name . " ")){
-    die("<p class='form'><a href='https://link.pokemob.net/" . $name . "'>link.pokemob.net/" . $name . "</a> 已經存在</p>");
+    die("<p class='form'><a href='https://link.pokemob.net/" . $name . "'>link.pokemob.net/" . $name . "</a> already exist</p>");
 } else {
     if (str_contains($link, "://")){
 
@@ -43,14 +43,14 @@ if ($link == "" or $name == "") {
 
     if (str_contains($name, " ") or str_contains($link, " ")){
         unset($_POST);
-        die("<p class='form'> '" . $name . "' 內有空格，不合法</p>");
+        die("<p class='form'> '" . $name . "' contains illegal character: space</p>");
     } else {
         $file = fopen($file_name, "a");
         fwrite($file, $name . " " . $link . "\n");
         fclose($file);
         unset($_POST);
 
-        echo("<p class='form'><a href='https://link.pokemob.net/" . $name . "'>link.pokemob.net/" . $name . "</a> 創造成功</p>");
+        echo("<p class='form'><a href='https://link.pokemob.net/" . $name . "'>link.pokemob.net/" . $name . "</a> created</p>");
     }
 
 
