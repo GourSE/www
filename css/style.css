@@ -54,5 +54,6 @@ img.icon{
 
 .subtext{
     margin-left: 15px;
+    font-size: clamp(0.6em,3vw,1.5em);
     size: 100px;
 }

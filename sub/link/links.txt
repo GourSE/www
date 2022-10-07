@@ -1,4 +1,0 @@
-pokemob http://pokemob.net
-cats https://www.youtube.com/watch?v=dQw4w9WgXcQ
-cow https://www.youtube.com/watch?v=qrxv0JNVtgY
-arch https://archlinux.org/
