@@ -15,6 +15,7 @@ RewriteRule ^error/?$ .- [R=404]
 RewriteRule ^img/?$ .- [R=404]
 RewriteRule ^php/?$ .- [R=404]
 RewriteRule ^sub/?$ .- [R=404]
+RewriteRule ^open_file/link_only/?$ .- [R=401]
 
 
 ErrorDocument 500 /error_html/500.html
